@@ -1,31 +1,34 @@
 // import ProductCard from './components/ProductCard.jsx'
 // import MyComponent from './components/MyComponent.jsx'
-// import Counter from './components/Counter.jsx'
+import Counter from './components/Counter.jsx'
 // import Carrito from './components/Carrito.jsx'
 
 import './App.css'
-import Efectos from './components/Efectos.jsx'
+import Contenedor from './components/Contenedor.jsx'
+// import Efectos from './components/Efectos.jsx'
 import Footer from './components/Footer.jsx'
 import Header from './components/Header.jsx'
+// import Registro from './components/Registro.jsx'
+import UserProvider from './context/UserProvider.jsx'
 
 function App() {
 
   return (
-    <>
-      <Header titulo={'Titulo del blog'} />
+    <UserProvider>
+      <Header />
 
-      <div style={{
-        margin: '50px 5px'
-      }}>
-        <Efectos />
-      </div>
+      <Contenedor>
+      <Counter />
+      </Contenedor>
 
+
+        {/* <Registro /> */}
+      {/* <Efectos /> */}
       {/* <Carrito /> */}
-      {/* <Counter /> */}
       {/* <MyComponent /> {/* Elementos */}
       {/* <MyCompenent>{children}</MyCompenent> Contenedor*/}
       <Footer />
-    </>
+    </UserProvider>
   )
 }
 
