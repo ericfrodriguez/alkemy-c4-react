@@ -10,19 +10,26 @@ import Footer from './components/Footer.jsx'
 import Header from './components/Header.jsx'
 // import Registro from './components/Registro.jsx'
 import UserProvider from './context/UserProvider.jsx'
+import MyAppBar from './components/MyAppBar.jsx';
+import Confirm from './components/Confirm.jsx'
+import ProductList from './components/ProductList.jsx'
 
 function App() {
 
   return (
     <UserProvider>
-      <Header />
+      {/* <Header /> */}
+      <MyAppBar />
+      {/* <Confirm /> */}
+      <ProductList />
 
-      <Contenedor>
+
+      {/* <Contenedor>
       <Counter />
-      </Contenedor>
+      </Contenedor> */}
 
 
-        {/* <Registro /> */}
+      {/* <Registro /> */}
       {/* <Efectos /> */}
       {/* <Carrito /> */}
       {/* <MyComponent /> {/* Elementos */}

@@ -27,6 +27,8 @@ function Registro() {
 
         setSubmitted(true);
 
+        // Validar credenciales
+
         const nuevoUsuario = {
             name: name,
             image: image
